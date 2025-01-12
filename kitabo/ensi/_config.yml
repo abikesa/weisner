@@ -4,10 +4,10 @@
 
 #######################################################################################
 # Book settings
-title                       : Space-Time # The title of the book. Will be placed in the left navbar.
+title                       : Oakland # The title of the book. Will be placed in the left navbar.
 author                      :  # The author of the book
 copyright                   : "2025"  # Copyright year to be placed in the footer
-logo                        :  https://upload.wikimedia.org/wikipedia/commons/d/da/Demis_Hassabis%2C_2024_Nobel_Prize_Laureate_in_Chemistry_%28cropped%29.jpg # figures/logo.png # A path to the book logo
+logo                        :  https://treenewal.com/wp-content/uploads/2020/11/oak-tree-care.png # figures/logo.png # A path to the book logo
 email                       : "abikesa.sh@gmail.com"
 exclude_patterns            : ["LICENSE.md"]  # Patterns to skip when building the book. Can be glob-style (for example "*skip.ipynb")
 
