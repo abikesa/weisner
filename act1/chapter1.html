@@ -470,7 +470,7 @@ document.write(`
         <span class="s1">&#39;Yellowstone/PerceptionAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Interface&#39;</span><span class="p">],</span>
         <span class="s1">&#39;Input/AgenticAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Digital-Twin&#39;</span><span class="p">,</span> <span class="s1">&#39;Enterprise&#39;</span><span class="p">],</span>
         <span class="s1">&#39;Hidden/GenerativeAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Error&#39;</span><span class="p">,</span> <span class="s1">&#39;Space&#39;</span><span class="p">,</span> <span class="s1">&#39;Trial&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Output/PhysicalAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Loss-Function&#39;</span><span class="p">,</span> <span class="s1">&#39;Sensors&#39;</span><span class="p">,</span> <span class="s1">&#39;Feedback&#39;</span><span class="p">,</span> <span class="s1">&#39;Limbs&#39;</span><span class="p">,</span> <span class="s1">&#39;Optimization&#39;</span><span class="p">]</span>
+        <span class="s1">&#39;Output/PhysicalAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Loss-Function&#39;</span><span class="p">,</span> <span class="s1">&#39;Sensors&#39;</span><span class="p">,</span> <span class="s1">&#39;No Feedback&#39;</span><span class="p">,</span> <span class="s1">&#39;Limbs&#39;</span><span class="p">,</span> <span class="s1">&#39;Optimization&#39;</span><span class="p">]</span>
     <span class="p">}</span>
 
 <span class="c1"># Assign colors to nodes</span>
@@ -493,7 +493,7 @@ document.write(`
     <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Output/PhysicalAI&#39;</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Optimization&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Limbs&#39;</span><span class="p">,</span> <span class="s1">&#39;Feedback&#39;</span><span class="p">,</span> <span class="s1">&#39;Sensors&#39;</span><span class="p">]:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Limbs&#39;</span><span class="p">,</span> <span class="s1">&#39;No Feedback&#39;</span><span class="p">,</span> <span class="s1">&#39;Sensors&#39;</span><span class="p">]:</span>
             <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
         <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Loss-Function&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>
@@ -536,7 +536,7 @@ document.write(`
         <span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span>
         <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.1&quot;</span>
     <span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Red Queen to AGI&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Red Queen to AGI: No Optimization Without Feedback&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 <span class="c1"># Run the visualization</span>
@@ -546,13 +546,14 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/64ef2e772ba2da04c0ceaa742f9452a421a124a5a2d4d33356bc6ba58bd11576.png" src="../_images/64ef2e772ba2da04c0ceaa742f9452a421a124a5a2d4d33356bc6ba58bd11576.png" />
+<img alt="../_images/e65b9304ff2bc1d9e559398f6979717172597709bbd7ded646b348181edbf152.png" src="../_images/e65b9304ff2bc1d9e559398f6979717172597709bbd7ded646b348181edbf152.png" />
 </div>
 </div>
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../_images/blanche.png"><img alt="../_images/blanche.png" src="../_images/blanche.png" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Our infrastructure includes reflexive arcs that process perceived patterns in an instant. These sometimes outlive their usefulness and leave vestigual quirks like speculation, revelation, imagination, nostalgia, and more.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">How now, how now? What say the citizens? Now, by the holy mother of our Lord,
+The citizens are mum, say not a word.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
