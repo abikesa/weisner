@@ -1,6 +1,0 @@
-# Existential
-
-
-```{bibliography}
-```
-
